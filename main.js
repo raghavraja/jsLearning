@@ -1,7 +1,5 @@
 //conditional opreators
-
 // Ticket System
-
 // above 18 will be consider as a adult;
 // belove 17 will be consider as a children;
 
@@ -23,7 +21,9 @@ else{
 // if hour is between 1pm(13) to 5pm (17) --- good evening
 // if hour is between 5pm(17) to 12am(0) -- good night
 
-let clock = 14;
+let  mis = new Date();
+let clock = mis.getHours();
+
 if(clock >= 0 && clock <= 13 ){
 console.log("Good Morning");
 }
@@ -31,7 +31,7 @@ else if(clock >=13 && clock<= 17){
 console.log("Good Afternoon");
 }
 else{
-console.log("Good Evening");
+console.log("Good Evening" + " " + "Time:" + clock);
 }
 
 // ---------------------END--------------------------------
