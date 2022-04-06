@@ -88,3 +88,15 @@ break;
     default : console.log("you are not elgible to buy phone");
 }
 //---------------------------END--------------------------------
+
+
+// Loop concept
+//FOR LOOP, WHILE LOOP, DO WHILE, FOR IN LOOP, FOR OF LOOP
+//for( initialExpression; condition; step)
+
+
+let fruits = ['apple', 'Bannana', 'orange', 'red banana']
+for (let i = 0; i<fruits.length; i++){
+console.log(fruits[i]);
+document.write(fruits[i] + " " + "</br>")
+}
