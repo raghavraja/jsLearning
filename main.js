@@ -31,3 +31,60 @@ if (clock >= 0 && clock <= 13) {
 }
 
 // ---------------------END--------------------------------
+
+// switch case
+// anna university grade system
+// s- satisfied, a-grade, b-grade, e-grade, u-grade;
+
+let grade = "e";
+switch(grade){
+case "s" : console.log(" S - satisfied grade ");
+break;
+case "a" : console.log("A - First Class Grade");
+break;
+case "b": console.log("B- Second Class Grade");
+break;
+case "r":
+case "e": console.log("E- Just Pass");
+break;
+case "u": console.log("U - Failed Grade");
+break;
+default : console.log("Unknown Grade");
+};
+//----------------END-------------------------------------
+
+
+let marks = 97;
+switch(true){
+    case (marks <= 60) :
+        console.log("Above avarage");
+        break;
+        case (marks > 90):
+            console.log("Super grade");
+            break; 
+        default: console.log("unknown marks");
+    
+}
+
+
+//mobile buying options
+// if given amount is > 10k then buy android mobile
+// if given ammount is >50k then bye iphone mobile
+// if given ammount is <5k || <10 k buy basic mobile
+
+
+let savingAmountValue = 5000;
+
+switch(true){
+    case(savingAmountValue >= 50000):
+console.log("Dear card holder you are eligable for buy iphone");    
+break;
+case (savingAmountValue >= 10000):
+    console.log("Dear Card holder you are eligiable for buying andriod phone");
+    break;
+case(savingAmountValue>=5000 && savingAmountValue<=10000):
+console.log("Dear card holder you are elgiable to buy basic phone");
+break;
+    default : console.log("you are not elgible to buy phone");
+}
+//---------------------------END--------------------------------
