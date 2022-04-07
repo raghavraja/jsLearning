@@ -13,7 +13,7 @@ if (age >= 18 && ismale) {
     console.log("Children: Ticket price is Rs:5");
 }
 
-//-------------------START--------------------------------------
+//-------------------START-----------------------------------------
 // greeting app
 // if hour is between 12am(0) to 13pm (12) --- good morning
 // if hour is between 1pm(13) to 5pm (17) --- good evening
@@ -30,7 +30,7 @@ if (clock >= 0 && clock <= 13) {
     console.log("Good Evening" + " " + "Time:" + clock);
 }
 
-// ---------------------END-------------------------------------
+// ---------------------END---------------------------------------
 
 
 
@@ -69,7 +69,7 @@ switch(true){
             break; 
         default: console.log("unknown marks");    
 }
-//------------------END------------------------------------------
+//------------------END-----------------------------------------
 
 //mobile buying options
 // if given amount is > 10k then buy android mobile
@@ -91,7 +91,7 @@ console.log("Dear card holder you are elgiable to buy basic phone");
 break;
     default : console.log("you are not elgible to buy phone");
 }
-//---------------------------END--------------------------------
+//---------------------------END---------------------------------
 
 
 
@@ -112,6 +112,6 @@ if(i%2 !== 0){
     document.write("Hello" + " " +i + "</br>");
 }
 }
-//----------------END--------------------------------------------
+//----------------END---------------------------------------------
 
 
