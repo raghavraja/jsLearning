@@ -13,7 +13,7 @@ if (age >= 18 && ismale) {
     console.log("Children: Ticket price is Rs:5");
 }
 
-//-------------------START------------------------------------
+//-------------------START--------------------------------------
 // greeting app
 // if hour is between 12am(0) to 13pm (12) --- good morning
 // if hour is between 1pm(13) to 5pm (17) --- good evening
@@ -30,7 +30,7 @@ if (clock >= 0 && clock <= 13) {
     console.log("Good Evening" + " " + "Time:" + clock);
 }
 
-// ---------------------END--------------------------------
+// ---------------------END-------------------------------------
 
 // switch case
 // anna university grade system
@@ -51,8 +51,8 @@ case "u": console.log("U - Failed Grade");
 break;
 default : console.log("Unknown Grade");
 };
-//----------------END-------------------------------------
-
+//----------------END--------------------------------------------
+//switch condition
 
 let marks = 97;
 switch(true){
@@ -63,9 +63,10 @@ switch(true){
             console.log("Super grade");
             break; 
         default: console.log("unknown marks");
+        
     
 }
-
+//------------------END------------------------------------------
 
 //mobile buying options
 // if given amount is > 10k then buy android mobile
@@ -97,4 +98,16 @@ let fruits = ['apple', 'Bannana', 'orange', 'red banana']
 for (let i = 0; i<fruits.length; i++){
 console.log(fruits[i]);
 document.write(fruits[i] + " " + "</br>")
+
 }
+// looping odd number and even number;
+
+for(let i = 1; i<10; i++){
+// console.log(i);
+if(i%2 !== 0){
+    document.write("Hello" + " " +i + "</br>");
+}
+}
+//----------------END--------------------------------------------
+
+
