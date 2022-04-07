@@ -119,7 +119,7 @@ if(i%2 !== 0){
 
 // while loop
 
-let ark = 100;
+let ark = 10;
 while(ark >= 1){
 
 if(ark % 2 !== 0){
@@ -196,7 +196,6 @@ return{
     person_secondName: person_secondName,
     person_age : person_age,
     greeting : function(){
-        
         let msg = `my name is${this.person_firstName} ${this.person_secondName}`;
         console.log(msg);
     }
@@ -212,3 +211,22 @@ raj.greeting();
 arjun.greeting();
 
 //-----------------------------END---------------------------------
+
+
+// construtur function  --- need to practice factory function and cunstruction function
+
+function Person(name){
+this.name = name;
+
+this.greet = () => {
+    console.log(`${name}`);
+}
+
+};
+
+let mark = new Person("kishore");
+let kisk = new Person("kisk")
+mark.greet();
+kisk.greet();
+
+//--------------------------------------END-------------------------------
