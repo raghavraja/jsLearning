@@ -13,7 +13,7 @@ if (age >= 18 && ismale) {
     console.log("Children: Ticket price is Rs:5");
 }
 
-//-------------------START-----------------------------------------
+//-------------------START----------------------------------------------------------
 // greeting app
 // if hour is between 12am(0) to 13pm (12) --- good morning
 // if hour is between 1pm(13) to 5pm (17) --- good evening
@@ -30,7 +30,7 @@ if (clock >= 0 && clock <= 13) {
     console.log("Good Evening" + " " + "Time:" + clock);
 }
 
-// ---------------------END---------------------------------------
+// ---------------------END---------------------------------------------------------
 
 
 
@@ -56,7 +56,7 @@ default : console.log("Unknown Grade");
 
 
 
-//----------------END--------------------------------------------
+//----------------END--------------------------------------------------------------
 //switch condition
 
 let marks = 97;
@@ -69,7 +69,7 @@ switch(true){
             break; 
         default: console.log("unknown marks");    
 }
-//------------------END-----------------------------------------
+//------------------END-------------------------------------------------------------
 
 //mobile buying options
 // if given amount is > 10k then buy android mobile
@@ -91,7 +91,7 @@ console.log("Dear card holder you are elgiable to buy basic phone");
 break;
     default : console.log("you are not elgible to buy phone");
 }
-//---------------------------END---------------------------------
+//---------------------------END------------------------------------------------------
 
 
 
@@ -104,14 +104,88 @@ for (let i = 0; i<fruits.length; i++){
 console.log(fruits[i]);
 document.write(fruits[i] + " " + "</br>")
 }
-// looping odd number and even number;
 
+
+
+// looping odd number and even number;
 for(let i = 1; i<10; i++){
 // console.log(i);
 if(i%2 !== 0){
     document.write("Hello" + " " +i + "</br>");
 }
 }
-//----------------END---------------------------------------------
+//----------------END--------------------------------------------------------------------
 
 
+// while loop
+
+let ark = 100;
+while(ark >= 1){
+
+if(ark % 2 !== 0){
+    document.write("Hello" + " " +ark + "</br>");
+}
+ark--;
+}
+
+
+// for in loop object 
+
+let person = {
+personName: "Rajaji",
+age:28,
+liveLocation: "chennai",
+}
+
+
+for(let userDetails in person){
+document.write(userDetails+ ":" + " " + person[userDetails] + " " + "</br>" );
+
+}
+
+//-----------------------END---------------------------------------------------------
+
+// for in loop Array
+
+let colors = ['yellow', 'blue', 'green', 'red'];
+for(let key in colors){
+document.write(key + " " + colors[key] + "</br>");
+}
+
+//for of loop
+for(let color of colors){
+    document.write("colors:" + color + "</br>");
+}
+
+//-----------------------END--------------------------------------------------------
+
+
+//object OOP(object orented program)
+
+
+let userDetails = {
+person_firstName: "Rajesh",
+person_secondName: "Kanna",
+person_age:28,
+isalive:true,
+person_location: "chennai",
+person_hobbies: ['cricket', 'football', 'Archery'],
+person_family: {
+
+    father: "Kasivel",
+    Mother: "Pawn Ammal",
+},
+greeting: function(){
+let mart = `hi my name is${this.person_firstName} my hoobeis are ${this.person_hobbies}
+my family members father: ${this.person_family.father} , Mother: ${this.person_family.Mother}`;
+console.log(mart);
+}
+};
+
+console.log(userDetails.person_age);
+userDetails.greeting();
+
+//---------------------------------END-----------------------------------------------
+
+
+// factory function
