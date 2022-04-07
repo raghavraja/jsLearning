@@ -32,6 +32,8 @@ if (clock >= 0 && clock <= 13) {
 
 // ---------------------END-------------------------------------
 
+
+
 // switch case
 // anna university grade system
 // s- satisfied, a-grade, b-grade, e-grade, u-grade;
@@ -51,6 +53,9 @@ case "u": console.log("U - Failed Grade");
 break;
 default : console.log("Unknown Grade");
 };
+
+
+
 //----------------END--------------------------------------------
 //switch condition
 
@@ -62,9 +67,7 @@ switch(true){
         case (marks > 90):
             console.log("Super grade");
             break; 
-        default: console.log("unknown marks");
-        
-    
+        default: console.log("unknown marks");    
 }
 //------------------END------------------------------------------
 
@@ -90,6 +93,8 @@ break;
 }
 //---------------------------END--------------------------------
 
+
+
 // Loop concept
 //FOR LOOP, WHILE LOOP, DO WHILE, FOR IN LOOP, FOR OF LOOP
 //for( initialExpression; condition; step)
@@ -98,7 +103,6 @@ let fruits = ['apple', 'Bannana', 'orange', 'red banana']
 for (let i = 0; i<fruits.length; i++){
 console.log(fruits[i]);
 document.write(fruits[i] + " " + "</br>")
-
 }
 // looping odd number and even number;
 
