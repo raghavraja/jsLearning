@@ -56,7 +56,7 @@ default : console.log("Unknown Grade");
 
 
 
-//----------------END--------------------------------------------------------------
+//----------------END---------------------------------------------------------
 //switch condition
 
 let marks = 97;
@@ -69,7 +69,7 @@ switch(true){
             break; 
         default: console.log("unknown marks");    
 }
-//------------------END-------------------------------------------------------------
+//------------------END-----------------------------------------------------
 
 //mobile buying options
 // if given amount is > 10k then buy android mobile
@@ -91,7 +91,7 @@ console.log("Dear card holder you are elgiable to buy basic phone");
 break;
     default : console.log("you are not elgible to buy phone");
 }
-//---------------------------END------------------------------------------------------
+//---------------------------END--------------------------------------------
 
 
 
@@ -114,7 +114,7 @@ if(i%2 !== 0){
     document.write("Hello" + " " +i + "</br>");
 }
 }
-//----------------END--------------------------------------------------------------------
+//----------------END---------------------------------------------------
 
 
 // while loop
@@ -143,7 +143,7 @@ document.write(userDetails+ ":" + " " + person[userDetails] + " " + "</br>" );
 
 }
 
-//-----------------------END---------------------------------------------------------
+//-----------------------END---------------------------------------------------
 
 // for in loop Array
 
@@ -157,13 +157,13 @@ for(let color of colors){
     document.write("colors:" + color + "</br>");
 }
 
-//-----------------------END--------------------------------------------------------
+//-----------------------END----------------------------------------------------
 
 
 //object OOP(object orented program)
 
 
-let userDetails = {
+ let userDetails = {
 person_firstName: "Rajesh",
 person_secondName: "Kanna",
 person_age:28,
@@ -183,9 +183,32 @@ console.log(mart);
 };
 
 console.log(userDetails.person_age);
-userDetails.greeting();
+userDetails.greeting(); 
 
-//---------------------------------END-----------------------------------------------
+//---------------------------------END--------------------------------------------
 
 
-// factory function
+// factory function 
+
+function createperson(person_firstName, person_secondName, person_age ){
+return{
+    person_firstName : person_firstName,
+    person_secondName: person_secondName,
+    person_age : person_age,
+    greeting : function(){
+        
+        let msg = `my name is${this.person_firstName} ${this.person_secondName}`;
+        console.log(msg);
+    }
+};
+
+};
+
+let raj = createperson("Rajaji", "Kasivel", 28);
+let arjun = createperson("Arjun", "Max", 27);
+
+console.log(arjun.person_firstName + " " + arjun.person_secondName);
+raj.greeting();
+arjun.greeting();
+
+//-----------------------------END---------------------------------
