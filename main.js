@@ -247,7 +247,6 @@ console.log(zoho);
 zoho.greeting();
 
 //--------------------------END--------------------------
-
 // construtor property
 
 let abx =  new String("hello max");
@@ -256,3 +255,4 @@ let abr = new Number(24);
 let xrb = new Boolean(true);
 let maxo = new Array(1,2,3,34,)
 console.log(abx, abr, maxo);
+//---------------END---------------------------------------
