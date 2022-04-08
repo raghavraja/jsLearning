@@ -225,8 +225,25 @@ this.greet = () => {
 };
 
 let mark = new Person("kishore");
-let kisk = new Person("kisk")
+let kisk = new Person("kishore");
 mark.greet();
 kisk.greet();
 
-//--------------------------------------END-------------------------------
+//--------------------------------------END------------------
+
+// dynamic object in javascript
+
+let zoho = {
+
+    userName : "Rajaji",
+}
+zoho.age = 28;
+
+zoho.greeting = function(){
+console.log("makya" + this.userName);
+}
+delete zoho.age;
+console.log(zoho);
+zoho.greeting();
+
+//--------------------------END--------------------------
