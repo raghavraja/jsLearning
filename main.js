@@ -258,4 +258,29 @@ console.log(abx, abr, maxo);
 //---------------END---------------------------------------
 
 
+function Userpoint(name, age, school){
+this.name = name;
+this.age = age;
+this.school = school;
+this.macaro  = ()=> {
+console.log(this.name + this.school);
+}
+console.log(`over all output ${this.name} ${this.age}`);
+}
+
+let userPoint = new Userpoint("Rajaji", 28, "Zoho Schools");
+let mnt = userPoint;
+console.log(mnt.school);
+
+
+
+let baby = "dhiya";
+let baby2 = new String("dheera");
+console.log(baby, baby2);
+
+let mte1 = {};
+let mte = new Object();
+
+
+console.log(userPoint.constructor);
 
