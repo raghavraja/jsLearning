@@ -254,12 +254,13 @@ let abx =  new String("hello max");
 let abr = new Number(24);
 let xrb = new Boolean(true);
 let maxo = new Array(1,2,3,34,)
+let ortix = new Object();
 console.log(abx, abr, maxo);
 //---------------END---------------------------------------
 
 
 function Userpoint(name, age, school){
-this.name = name;
+this.name = new String(name);
 this.age = age;
 this.school = school;
 this.macaro  = ()=> {
@@ -268,9 +269,9 @@ console.log(this.name + this.school);
 console.log(`over all output ${this.name} ${this.age}`);
 }
 
-let userPoint = new Userpoint("Rajaji", 28, "Zoho Schools");
-let mnt = userPoint;
-console.log(mnt.school);
+let upoint = new Userpoint("Rajaji", 28, "Zoho Schools")
+upoint.macaro();
+console.log(upoint['name']); 
 
 
 
@@ -282,5 +283,5 @@ let mte1 = {};
 let mte = new Object();
 
 
-console.log(userPoint.constructor);
+console.log(upoint.constructor);
 
