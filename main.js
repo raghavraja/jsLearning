@@ -256,3 +256,6 @@ let xrb = new Boolean(true);
 let maxo = new Array(1,2,3,34,)
 console.log(abx, abr, maxo);
 //---------------END---------------------------------------
+
+
+
