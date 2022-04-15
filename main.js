@@ -255,24 +255,8 @@ let abr = new Number(24);
 let xrb = new Boolean(true);
 let maxo = new Array(1,2,3,34,)
 let ortix = new Object();
-console.log(abx, abr, maxo);
+console.log(abx[0], abx[2]);
 //---------------END---------------------------------------
-
-
-function Userpoint(name, age, school){
-this.name = new String(name);
-this.age = age;
-this.school = school;
-this.macaro  = ()=> {
-console.log(this.name + this.school);
-}
-console.log(`over all output ${this.name} ${this.age}`);
-}
-
-let upoint = new Userpoint("Rajaji", 28, "Zoho Schools")
-upoint.macaro();
-console.log(upoint['name']); 
-
 
 
 let baby = "dhiya";
@@ -283,5 +267,49 @@ let mte1 = {};
 let mte = new Object();
 
 
-console.log(upoint.constructor);
+function Userpoint(name, age, school){
+    this.name = name;
+    this.age = age;
+    this.school = school;
+    this.macaro  = ()=> {
+    console.log(this.name + this.school);
+    }
+    console.log(`over all output ${this.name} ${this.age}`);
+    }
+    
+    let upoint = new Userpoint("Rajaji", 28, "Zoho Schools")
+    upoint.macaro();
+    console.log(upoint['name']); 
 
+    for ( let key in upoint){
+        console.log(`tenderrrrr ${key}: ${upoint[key]}`);
+    };
+
+    for(let marx of Object.keys(upoint)){
+    console.log(marx);
+    }
+
+
+    for(let dingo in upoint){
+        console.log("maxertt", dingo);
+    }
+
+    for (let minto of Object.values(upoint)){
+        console.log("cererytr"  + minto);
+    }
+
+    for(let sis of Object.entries(upoint)){
+    console.log(sis);
+    }
+
+    if('school' in upoint){
+        console.log("yes");
+    }
+    else{
+
+        console.log("no");
+    }
+
+
+let another = Object.assign({}, upoint)
+console.log(another);
