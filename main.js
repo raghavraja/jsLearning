@@ -310,8 +310,11 @@ function Userpoint(name, age, school){
     }
 
 
-let another = Object.assign({}, upoint)
+let another = Object.assign([], upoint)
 console.log(another);
+
+let mango = {...upoint}
+console.log(mango);
 
 
 let name3 = "banana";
@@ -322,3 +325,26 @@ break;
 case("apple"): console.log();
 break;
 }
+
+//math.pi
+console.log(Math.PI);
+
+//Math.absloute
+console.log(Math.abs(-4));
+
+let digrer = Math.max(12,67,89,3,45);
+let digrer2 = Math.min(12,67,89,3,45);
+console.log(digrer2);
+
+//maximum mark
+
+let schoolMarks = [45,76,89,12,34];
+let highMark = Object.assign([], schoolMarks)
+let grt = Math.max(...highMark);
+console.log(grt);
+
+
+let firstName = "Rajaji";
+let lastName = new String("Kasivel");
+
+console.log(fir);
