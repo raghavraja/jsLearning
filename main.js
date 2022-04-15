@@ -306,10 +306,19 @@ function Userpoint(name, age, school){
         console.log("yes");
     }
     else{
-
         console.log("no");
     }
 
 
 let another = Object.assign({}, upoint)
 console.log(another);
+
+
+let name3 = "banana";
+
+switch(name3){
+case ("banana") : console.log("hello ");
+break;
+case("apple"): console.log();
+break;
+}
