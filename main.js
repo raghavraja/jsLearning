@@ -344,7 +344,23 @@ let grt = Math.max(...highMark);
 console.log(grt);
 
 
-let firstName = "Rajaji";
-let lastName = new String("Kasivel");
+let firstName = new String ("Rajaji hello world");
+let lastName = "Kasivel";
 
-console.log(fir);
+//string object 
+console.log(firstName.length);
+console.log(firstName.charAt(3));
+let connect = firstName.concat( " ", lastName);
+let inc = firstName.includes("hello");
+let ender = firstName.endsWith("world");
+let stra = firstName.startsWith("Rajaji")
+let ender2 = firstName.endsWith("world")
+let inder = firstName.indexOf("hello");
+let bmr = firstName.lastIndexOf("w");
+console.log(connect);
+console.log("yes data is available:" + " " + inc);
+console.log(ender);
+console.log("start with" + " "+ stra);
+console.log("End with" + " " +  ender);
+console.log(inder);
+console.log("super man" + bmr);
