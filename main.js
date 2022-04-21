@@ -364,3 +364,42 @@ console.log("start with" + " "+ stra);
 console.log("End with" + " " +  ender);
 console.log(inder);
 console.log("super man" + bmr);
+
+let crm = "Neela Magam";
+let inrs = crm.indexOf("l");
+console.log(inrs);
+let larin = crm.lastIndexOf();
+console.log(larin);
+let repe = crm.repeat(14);
+console.log(repe);
+let repl = crm.replace(crm, "Arun");
+console.log(repl);
+console.log(crm);
+console.log(crm.split(" ", 1));
+let subr = crm.substring(6);
+console.log(subr);
+let upper = crm.toUpperCase();
+console.log(upper);
+let lower = crm.toLowerCase();
+console.log(lower);
+let trimmer =  "\"Hello i am Rajaji\", i am working in zoho";
+console.log(trimmer.trim());
+console.log(trimmer.trimStart());
+let numso = "1 + 5"
+console.log(numso.valueOf());
+console.log(eval(numso));
+console.log(eval(numso.valueOf()));
+
+
+// Template Littrals
+let message = `Hello super "hero"
+where are
+you from`
+console.log(message);
+
+
+//date and object
+
+let timmers = new Date(1995, 11, 7);
+console.log(timmers);
+
