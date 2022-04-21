@@ -108,7 +108,7 @@ document.write(fruits[i] + " " + "</br>")
 
 
 // looping odd number and even number;
-for(let i = 1; i<10; i++){
+for(let i = 1; i<2; i++){
 // console.log(i);
 if(i%2 !== 0){
     document.write("Hello" + " " +i + "</br>");
@@ -119,7 +119,7 @@ if(i%2 !== 0){
 
 // while loop
 
-let ark = 10;
+let ark = 2;
 while(ark >= 1){
 
 if(ark % 2 !== 0){
@@ -399,7 +399,113 @@ console.log(message);
 
 
 //date and object
-
 let timmers = new Date(1995, 11, 7);
 console.log(timmers);
+
+
+let mncr = new Date()
+let [month, year, date] = [mncr.getMonth, mncr.getFullYear, mncr.getDay]
+console.log(month, year, date);
+
+
+let fruits2 = ['Apple'];
+fruits2[0]  = 'mango';
+fruits2[1]  = 'orange';
+fruits2[2]  = 'Apple';
+
+let arr = ['hello Rajaji', 'welcome to Array', fruits2];
+let obr = {crack: 'smack'}
+
+
+console.log("Hello arr" + (arr[2]));
+console.log(fruits);
+console.log(fruits2[0] + " " +  fruits2[2]);
+
+for(let orbit in obr)
+{
+    console.log(orbit + " " + obr[orbit]);
+}
+
+
+// Array
+let favcolors = ['red', 'blue', 'green'];
+favcolors[4] = 'black';
+console.log(favcolors);
+console.log(favcolors.length);
+
+
+//Adding array in existing array value
+const cart = ['Hello', 1, true, null, undefined];
+document.write(cart[4] + '</br>');
+
+
+const openCart = ['html', 'javascript', 'css']
+//push
+openCart.push('mangodb')
+//unshift
+openCart.unshift('ajax')
+//splice
+openCart.splice(2, 0, {banana: "yellostone"});
+openCart.splice(4,0, "sniper")
+console.log(openCart[3]);
+document.write(openCart[2].banana);
+
+//finding elements in Array primitive values
+
+const findCart = ['price', 'value', 'count', 'maximum'];
+console.log(findCart.indexOf('maximum'));
+console.log(findCart.includes('value'));
+
+
+if(findCart.includes('value') == 1)
+{
+    console.log("micro");
+}
+
+else{
+console.log('nato');
+};
+
+
+// finding elements Array reference value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
