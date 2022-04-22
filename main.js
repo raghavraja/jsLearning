@@ -468,6 +468,16 @@ console.log('nato');
 
 
 // finding elements Array reference value
+let books = [
+
+    { id:1, uname:"rajaji", class:'b'},
+    {id:2, uname:"Navin", class:"c",},   
+]
+
+console.log(books.find(function(order){
+console.log(order);
+
+}));
 
 
 
