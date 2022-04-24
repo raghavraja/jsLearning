@@ -108,7 +108,7 @@ document.write(fruits[i] + " " + "</br>")
 
 
 // looping odd number and even number;
-for(let i = 1; i<10; i++){
+for(let i = 1; i<2; i++){
 // console.log(i);
 if(i%2 !== 0){
     document.write("Hello" + " " +i + "</br>");
@@ -119,7 +119,7 @@ if(i%2 !== 0){
 
 // while loop
 
-let ark = 10;
+let ark = 2;
 while(ark >= 1){
 
 if(ark % 2 !== 0){
@@ -365,6 +365,163 @@ console.log("End with" + " " +  ender);
 console.log(inder);
 console.log("super man" + bmr);
 
+<<<<<<< HEAD
 let msr = new Date();
 let [month, date, year] = [msr.getMonth(), msr.getDate(), msr.getFullYear()]
 console.log(month,date,year);
+=======
+let crm = "Neela Magam";
+let inrs = crm.indexOf("l");
+console.log(inrs);
+let larin = crm.lastIndexOf();
+console.log(larin);
+let repe = crm.repeat(14);
+console.log(repe);
+let repl = crm.replace(crm, "Arun");
+console.log(repl);
+console.log(crm);
+console.log(crm.split(" ", 1));
+let subr = crm.substring(6);
+console.log(subr);
+let upper = crm.toUpperCase();
+console.log(upper);
+let lower = crm.toLowerCase();
+console.log(lower);
+let trimmer =  "\"Hello i am Rajaji\", i am working in zoho";
+console.log(trimmer.trim());
+console.log(trimmer.trimStart());
+let numso = "1 + 5"
+console.log(numso.valueOf());
+console.log(eval(numso));
+console.log(eval(numso.valueOf()));
+
+
+// Template Littrals
+let message = `Hello super "hero"
+where are
+you from`
+console.log(message);
+
+
+//date and object
+let timmers = new Date(1995, 11, 7);
+console.log(timmers);
+
+
+let mncr = new Date()
+let [month, year, date] = [mncr.getMonth, mncr.getFullYear, mncr.getDay]
+console.log(month, year, date);
+
+
+let fruits2 = ['Apple'];
+fruits2[0]  = 'mango';
+fruits2[1]  = 'orange';
+fruits2[2]  = 'Apple';
+
+let arr = ['hello Rajaji', 'welcome to Array', fruits2];
+let obr = {crack: 'smack'}
+
+
+console.log("Hello arr" + (arr[2]));
+console.log(fruits);
+console.log(fruits2[0] + " " +  fruits2[2]);
+
+for(let orbit in obr)
+{
+    console.log(orbit + " " + obr[orbit]);
+}
+
+
+// Array
+let favcolors = ['red', 'blue', 'green'];
+favcolors[4] = 'black';
+console.log(favcolors);
+console.log(favcolors.length);
+
+
+//Adding array in existing array value
+const cart = ['Hello', 1, true, null, undefined];
+document.write(cart[4] + '</br>');
+
+
+const openCart = ['html', 'javascript', 'css']
+//push
+openCart.push('mangodb')
+//unshift
+openCart.unshift('ajax')
+//splice
+openCart.splice(2, 0, {banana: "yellostone"});
+openCart.splice(4,0, "sniper")
+console.log(openCart[3]);
+document.write(openCart[2].banana);
+
+//finding elements in Array primitive values
+
+const findCart = ['price', 'value', 'count', 'maximum'];
+console.log(findCart.indexOf('maximum'));
+console.log(findCart.includes('value'));
+
+
+if(findCart.includes('value') == 1)
+{
+    console.log("micro");
+}
+
+else{
+console.log('nato');
+};
+
+
+// finding elements Array reference value
+let books = [
+
+    { id:1, uname:"rajaji", class:'b'},
+    {id:2, uname:"Navin", class:"c",},   
+]
+
+console.log(books.find(function(order){
+console.log(order);
+
+}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 425fbacdd25ff3624a916e2ada09e1a4f9501374
