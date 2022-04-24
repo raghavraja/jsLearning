@@ -364,3 +364,7 @@ console.log("start with" + " "+ stra);
 console.log("End with" + " " +  ender);
 console.log(inder);
 console.log("super man" + bmr);
+
+let msr = new Date();
+let [month, date, year] = [msr.getMonth(), msr.getDate(), msr.getFullYear()]
+console.log(month,date,year);
